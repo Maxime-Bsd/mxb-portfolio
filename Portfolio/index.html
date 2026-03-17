@@ -1,120 +1,233 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <!--Stylesheet CSS de base + Responsive + Animations-->
-        <link rel="stylesheet" href="CSS/Style-portfolio.css">
-        <link rel="stylesheet" href="CSS/Portfolio-responsive.css">
-        <link rel="stylesheet" href="CSS/Portfolio-animation.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-        <!--Script JS-->
-        <script src="JavaScript/Script.js"></script>
-        
-        <title>Home</title>
-        <!--FavIcon--> 
-        <link rel="icon" type="image/x-icon" href="">
+  <title>
+    2026 | Portfolio.
+  </title>
 
-    </head>
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="CSS/index.css" />
+</head>
 
-    <body>
-        <!--Header template-->
-        <header> <!--Voir pour changer le h1 et remplacer par un logo 
-                genre je fais mes initiale ou jsp-->
-            <h1><a href="index.html">BENSADOUN Maxime</a></h1>
-            <p>Ce site est toujours en cours de développement</p>
-            
-        </header>
+<body>
 
-        <nav class="navbar fade-in-right">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul> 
-                <li><a href="A propos.html">À propos</a></li>
-                <li><a href="CV-Bensadoun-Maxime.html" target="_blank">CV</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Mini-jeux/Jeu_1.html" target="_blank">Mini jeux</a></li>
-            </ul>
-        </nav>
-        <!--Fin du template Header+Navbar-->
+  <!-- ***** Header ***** -->
 
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Logos</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">A propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
 
-        <div class="lines__patern">
-            <div class="daimond__patern"></div>
-        </div>
+          <span>Bensadoun Maxime</span>
+        </h1>
 
-        <div class="portfolio fade-in">
-            <figure class="fade-in">
-                <a href="https://drive.google.com/file/d/1H_soHOHR1M8yyPSqokSBiYz1oCCc54B2/view" target="blank"><img src="Images/LunaBlossom.png" alt="projet" /></a>
-                <figcaption> <!--Adapter responsive-->
-                    <h2>Charte Graphique</h2>
-                    <p>Réalisation d'une charte graphique pour le groupe de musique Luna Blossom.</p>
-                </figcaption>
-            </figure>
-        
-            <figure class="fade-in">
-                <a href="https://drive.google.com/file/d/1ZH9OsUyFl5sxZ6cXahU9nlS-MRdgALyU/view" target="blank"><img src="Images/projet.png" alt="projet" /></a>
-                <figcaption>
-                    <h2>Dossier Nouvelles Ecritures du Reel</h2>
-                    <p>Réalisation d'un dossier organisé sous forme d'un magazine.</p>
-                </figcaption>
-            </figure>
-            
-            <figure class="fade-in">
-                <a href="https://drive.google.com/file/d/1RNXLL_hVARtX460s4H4NQS-ENWUq_nlj/view" target="blank"><img src="Images/projet.png" alt="projet" /></a>
-                <figcaption>
-                    <h2>Scénariser un Projet</h2>
-                    <p>Réalisation d'un dossier, création d'un scénario de court métrage.</p>
-                </figcaption>
-            </figure>
+        <p>Etudiant en Information & Communication</p>
+        <a href="#contact" class="btn btn--pink">Me Contacter</a>
+      </div>
+    </div>
+  </header>
 
-        </div>
+  <main role="main">
 
-            <div class="lines__patern">
-                <div class="daimond__patern"></div>
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Mes Projets</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Developpement Web</h3>
+              <p>
+                Création d'un site internet pour une galerie d'art, projet universitaire L3.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://lunaarthouse.netlify.app/" target="_blank" class="link__text">
+                  Voir le site.<span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Khaliion/Luna-Art-House" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
             </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
 
-        <div class="portfolio fade-in">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Charte Graphique</h3>
+              <p>
+                Projet universitaire, L2 Info com
+              </p>
+              <ul class="work__list">
+                <li>Adobe Illustrator</li>
+                <li>Adobe InDesign</li>
+              </ul>
 
-            <figure class="fade-in">
-                <a href="https://drive.google.com/file/d/1EyX7op_1ko92bbMpIMMJFKrbjJNFb_KK/view" target="blank"><img src="Images/TheDailyQuack.png" alt="projet" /></a>
-                <figcaption>
-                    <h2>The Daily Quack</h2>
-                    <p>Réalisation d'un journal en première année, travail de groupe. J'ai entièrement réalisé la couverture ainsi que l'intégralité de la mise en page du journal</p>
-                </figcaption>
-            </figure>
-        
-            <figure class="fade-in">
-                <a href="https://drive.google.com/file/d/1Ex1kSJdEnhUTg87lQVez2EG9vnhiQ_Ha/view" target="blank"><img src="Images/projet.png" alt="projet" /></a>
-                <figcaption>
-                    <h2>Images Publicitaires</h2>
-                    <p>Dossier d'analyse d'une campagne de pub + proposition d'une publicité.</p>
-                </figcaption>
-            </figure>
+              <div class="work__links">
+                <a href="https://www.calameo.com/read/0078363433f295cf3ea04?authid=x9Cl8JjH2n4L" class="link__text" target="_blank">
+                  Voir sur Calaméo.<span>&rarr;</span>
+                </a>
+                <a href="https://www.calameo.com/read/0078363433f295cf3ea04?authid=x9Cl8JjH2n4L" title="View Source Code" target="_blank">
+                  <img src="./images/calameo.jpeg" class="work__code" alt="Calaméo">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Stage</h3>
+              <p>
+                Dans le cadre de mes études, j'ai réalisé un stage au sein du studio de danse Mouv'ea. 
+              </p>
+              <ul class="work__list">
+                <li>Gestion des réseaux sociaux</li>
+                <li>Création de visuels (flyers...)</li>
+                <li>Montage vidéo</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Voir d'avantage. <span>&rarr;</span>
+                </a>
+              </div>
+
+              <div class="work__links separate">
+                <a href="https://drive.google.com/drive/u/0/folders/1U1Upwc79tNyHrF-gK6cvdMwVYdzH2BB7" class="link__text" target="_blank">
+                  Voir tous mes projets. <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
             
-            <figure class="fade-in">
-                <a href="#" target="blank"><img src="Images/projet.png" alt="projet" /></a>
-                <figcaption>
-                    <h2></h2>
-                    <p>En construction...</p>
-                </figcaption>
-            </figure>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="lines__patern">
-            <div class="daimond__patern"></div>
+    <!-- ***** Clients, à modifier plus tard ***** -->
+<!--
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Logos</h2>
+        <div class="client__logos">
+          
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
         </div>
+      </div>
+    </section>-->
 
-        <!--Script JS-->
-        <script src="JavaScript/Script.js"></script>
+    <!-- ***** About ***** -->
 
-        <footer>
-            <p id="footer">© BENSADOUN Maxime. Tous droits réservés</p>
-        </footer>
-    </body>
+    <section class="about" id="about">
+      <div class="row">
+        <h2>À propos</h2>
+        <div class="about__content">
+          <div class="about__text">
+
+            <p>
+              Etudiant en Science de l'Information et de la communication, spécialisé en Communication des Organisations.  À travers mes projets, j’ai développé une solide pratique de la suite Adobe (Photoshop, Illustrator, After Effects). Cette base technique me permet de concevoir des identités visuelles cohérentes et de piloter des projets de création graphique, que je souhaite désormais professionnaliser et approfondir à une échelle stratégique.
+            </p>
+
+            <a href="images/cv.pdf" class="btn" target="_blank">Mon CV</a>
+          </div>
+
+          <div class="about__photo-container">
+
+            <img class="about__photo" src="./images/about.jpg" alt="Photo de moi" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Me contacter</h2>
+      <div class="contact__info">
+        <p>
+          Si vous souhaitez <strong>transformer vos idées en images</strong> qui sauront parler à votre clientèle, que vous souhaitiez un site vitrine, des flyers, ou simplement prendre un petit café, <strong>contactez-moi</strong> ! Je répondrai à toutes les demandes et serai ravi de collaborer avec vous ! ☺️​
+        </p>
+
+        <a href="mailto:maximebensadoun3@gmail.com" class="btn">maximebensadoun3@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Khaliion" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.calameo.com/account/book" title="Link to Codepen Profile">
+            <img src="./images/calameo.jpeg" class="footer__social-image" alt="Calameo">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/maxime-bensadoun-640755348/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p>© 2026 | Bensadoun Maxime | Portfolio Numérique</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="JS/index.js"></script>
+</body>
+
 </html>
